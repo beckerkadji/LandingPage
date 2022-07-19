@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&family=Roboto:wght@100&display=swap');
+
+:root{
+    --primary-color: rgb(238, 222, 196);
+    --brown-color: #C8815F;
+    --text-size-min:17px;
+    --text-size:20px;
+    --text-title:68px;
+}
+.text_medium{font-size: var(--text-size-min);}
+.text_title{font-size: var(--text-title); line-height: 76px; margin: 0;}
+.text_side{font-size: var(--text-size)}
+
+/*button */
+.button{color: white; background-color: black; text-decoration:none; padding: 12px 35px; border-radius: 5px;}
+.para-button{margin-top: 90px; border: 1px solid}
+.button-slide-wrapper{border: 1px solid}
+.slide_button{ width: 10px; height: 10px; border: 1px solid; border-radius: 50%}
+
+/*button */
+
+
+/*Js animation with css */
+.slideDown{transition: 0.5s;}
+.slideUp{
+    background-color: rgba(255,255,255,0.9);;
+    color: #2c2b2b;
+    transition: 0.5s;
+    padding-bottom: 0 !important;
+}
+#item2{display: none;}
+/*Js animation */
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Jost', sans-serif;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+.nav_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+#navbar{
+    padding: 10px 15% 40px 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    z-index: 99;
+}
+
+#navbar nav{width: 60%;}
+
+#navbar .nav_ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+.first_section{height: 100vh;}
+
+#slider_header{height: 100%;}
+
+#slider_header .item{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+#slider_header .item .text_side,#slider_header .item .image_side{
+    flex: 1;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider_header .item .image_side{transform: translateX(-115px);}
+#slider_header .item .text_side{border: 1px solid black; position: relative}
+
+#slider_header .item .text_side div{
+    transform: translate(30px, -40px);
+    width: 50%;
+}
+.image-slider{
+    width: 70%;
+    height: 110%;
+    transform: translateY(-45px);
+}
